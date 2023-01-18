@@ -10,7 +10,7 @@ public class Hospital {
 
 	public static void main(String[] args) {
 
-		try (Connection conexao = DriverManager.getConnection("jdbc:mysql://10.225.0.4/hospital", "20201164010003", "20201164010003+santos")) {
+		try (Connection conexao = DriverManager.getConnection("jdbc:mysql://10.225.0.4/20201164010003_hospital", "20201164010003", "20201164010003+santos")) {
 			PreparedStatement stmt = conexao.prepareStatement("select * from medico");
 			ResultSet rs = stmt.executeQuery();
 
